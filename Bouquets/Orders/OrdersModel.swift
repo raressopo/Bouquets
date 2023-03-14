@@ -12,8 +12,8 @@ import Alamofire
 class OrdersModel {
     
     var orders: [Order] {
-        if let orders = try? OrdersService.shared.dataStack.fetchAll(From<Order>()) {
-            return orders
+        if let orders = try? DataStackManager.shared.dataStack.fetchAll(From<Order>()) {
+            return orders.sorted(by: { $0.id < $1.id })
         } else {
             return []
         }

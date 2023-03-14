@@ -15,20 +15,26 @@ enum OrderStatus: String, Codable {
 
 struct CustomerOrder: Codable {
     
-    let id: String?
-    let description: String?
+    let id: Int
+    let orderDescription: String?
     let price: Double?
-    let customerId: String?
+    let customerId: Int
     let imageUrl: String?
     let status: OrderStatus?
     
     enum CodingKeys: String, CodingKey {
         case id
-        case description
+        case orderDescription = "description"
         case price
         case customerId = "customer_id"
         case imageUrl = "image_url"
         case status
     }
+    
+}
+
+struct Orders: Codable {
+    
+    let orders: [CustomerOrder]?
     
 }

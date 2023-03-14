@@ -17,4 +17,8 @@ class OrdersViewModel {
         return ordersModel?.orders ?? []
     }
     
+    init(ordersModel: OrdersModel? = nil) {
+        self.ordersModel = ordersModel
+    }
+    
 }
