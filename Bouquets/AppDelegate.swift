@@ -7,14 +7,24 @@
 
 import UIKit
 import CoreData
+import CoreStore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        DataStackManager.shared.setupStorage {
+            OrdersService.shared.fetchOrders {
+                let notificationName = Notification.Name("OrdersFetchComplete")
+                
+                NotificationCenter.default.post(name: notificationName, object: nil)
+            }
+            
+            CustomersService.shared.fetchCustomers(completion: nil)
+        }
+        
         return true
     }
 

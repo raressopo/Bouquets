@@ -7,9 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		570E455229BF284900CD2C73 /* OrdersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570E455129BF284900CD2C73 /* OrdersService.swift */; };
+		570E455629BF2DAA00CD2C73 /* OrderDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570E455529BF2DAA00CD2C73 /* OrderDetailsViewController.swift */; };
+		570E455829BF2DF000CD2C73 /* OrderDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570E455729BF2DF000CD2C73 /* OrderDetailsViewModel.swift */; };
+		570E455A29BF2E2700CD2C73 /* OrderDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570E455929BF2E2700CD2C73 /* OrderDetailsModel.swift */; };
+		570E456529BF383C00CD2C73 /* ChangeOrderStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570E456429BF383C00CD2C73 /* ChangeOrderStatusView.swift */; };
+		570E456729BF384C00CD2C73 /* ChangeOrderStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 570E456629BF384C00CD2C73 /* ChangeOrderStatusView.xib */; };
+		570E456B29BF860A00CD2C73 /* OrdersViewControllersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570E456A29BF860A00CD2C73 /* OrdersViewControllersFactory.swift */; };
+		570E456D29BF8E8100CD2C73 /* CustomersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570E456C29BF8E8100CD2C73 /* CustomersService.swift */; };
+		570E457029BF8F4400CD2C73 /* DataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570E456F29BF8F4400CD2C73 /* DataStackManager.swift */; };
+		570E457229BF912600CD2C73 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570E457129BF912600CD2C73 /* Customer.swift */; };
 		578216D329BDD3FB00E28147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578216D229BDD3FB00E28147 /* AppDelegate.swift */; };
 		578216D529BDD3FB00E28147 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578216D429BDD3FB00E28147 /* SceneDelegate.swift */; };
-		578216D729BDD3FB00E28147 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578216D629BDD3FB00E28147 /* ViewController.swift */; };
+		578216D729BDD3FB00E28147 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578216D629BDD3FB00E28147 /* OrdersViewController.swift */; };
 		578216DA29BDD3FB00E28147 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578216D829BDD3FB00E28147 /* Main.storyboard */; };
 		578216DD29BDD3FB00E28147 /* Bouquets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 578216DB29BDD3FB00E28147 /* Bouquets.xcdatamodeld */; };
 		578216DF29BDD3FD00E28147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 578216DE29BDD3FD00E28147 /* Assets.xcassets */; };
@@ -17,6 +27,12 @@
 		578216ED29BDD3FD00E28147 /* BouquetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578216EC29BDD3FD00E28147 /* BouquetsTests.swift */; };
 		578216F729BDD3FD00E28147 /* BouquetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578216F629BDD3FD00E28147 /* BouquetsUITests.swift */; };
 		578216F929BDD3FD00E28147 /* BouquetsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578216F829BDD3FD00E28147 /* BouquetsUITestsLaunchTests.swift */; };
+		5782170729BDE25700E28147 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5782170629BDE25700E28147 /* Alamofire */; };
+		5782170929BDE31100E28147 /* CustomerOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782170829BDE31100E28147 /* CustomerOrder.swift */; };
+		57D25BBB29BF06C6002607F4 /* OrdersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D25BBA29BF06C6002607F4 /* OrdersViewModel.swift */; };
+		57D25BBD29BF070E002607F4 /* OrdersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D25BBC29BF070E002607F4 /* OrdersModel.swift */; };
+		57D25BBF29BF088C002607F4 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D25BBE29BF088C002607F4 /* OrderTableViewCell.swift */; };
+		57ED885929BE39BD009D1C96 /* CoreStore in Frameworks */ = {isa = PBXBuildFile; productRef = 57ED885829BE39BD009D1C96 /* CoreStore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +53,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		570E455129BF284900CD2C73 /* OrdersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersService.swift; sourceTree = "<group>"; };
+		570E455529BF2DAA00CD2C73 /* OrderDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsViewController.swift; sourceTree = "<group>"; };
+		570E455729BF2DF000CD2C73 /* OrderDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsViewModel.swift; sourceTree = "<group>"; };
+		570E455929BF2E2700CD2C73 /* OrderDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsModel.swift; sourceTree = "<group>"; };
+		570E456429BF383C00CD2C73 /* ChangeOrderStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeOrderStatusView.swift; sourceTree = "<group>"; };
+		570E456629BF384C00CD2C73 /* ChangeOrderStatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeOrderStatusView.xib; sourceTree = "<group>"; };
+		570E456A29BF860A00CD2C73 /* OrdersViewControllersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewControllersFactory.swift; sourceTree = "<group>"; };
+		570E456C29BF8E8100CD2C73 /* CustomersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomersService.swift; sourceTree = "<group>"; };
+		570E456F29BF8F4400CD2C73 /* DataStackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStackManager.swift; sourceTree = "<group>"; };
+		570E457129BF912600CD2C73 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		578216CF29BDD3FB00E28147 /* Bouquets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bouquets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		578216D229BDD3FB00E28147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		578216D429BDD3FB00E28147 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		578216D629BDD3FB00E28147 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		578216D629BDD3FB00E28147 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		578216D929BDD3FB00E28147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		578216DC29BDD3FB00E28147 /* Bouquets.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bouquets.xcdatamodel; sourceTree = "<group>"; };
 		578216DE29BDD3FD00E28147 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +77,10 @@
 		578216F229BDD3FD00E28147 /* BouquetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BouquetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		578216F629BDD3FD00E28147 /* BouquetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouquetsUITests.swift; sourceTree = "<group>"; };
 		578216F829BDD3FD00E28147 /* BouquetsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouquetsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5782170829BDE31100E28147 /* CustomerOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerOrder.swift; sourceTree = "<group>"; };
+		57D25BBA29BF06C6002607F4 /* OrdersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewModel.swift; sourceTree = "<group>"; };
+		57D25BBC29BF070E002607F4 /* OrdersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersModel.swift; sourceTree = "<group>"; };
+		57D25BBE29BF088C002607F4 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5782170729BDE25700E28147 /* Alamofire in Frameworks */,
+				57ED885929BE39BD009D1C96 /* CoreStore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +110,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		570E455329BF2D6900CD2C73 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				578216D629BDD3FB00E28147 /* OrdersViewController.swift */,
+				57D25BBA29BF06C6002607F4 /* OrdersViewModel.swift */,
+				57D25BBC29BF070E002607F4 /* OrdersModel.swift */,
+				57D25BBE29BF088C002607F4 /* OrderTableViewCell.swift */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		570E455429BF2D8C00CD2C73 /* OrderDetails */ = {
+			isa = PBXGroup;
+			children = (
+				570E455529BF2DAA00CD2C73 /* OrderDetailsViewController.swift */,
+				570E455729BF2DF000CD2C73 /* OrderDetailsViewModel.swift */,
+				570E455929BF2E2700CD2C73 /* OrderDetailsModel.swift */,
+				570E456429BF383C00CD2C73 /* ChangeOrderStatusView.swift */,
+				570E456629BF384C00CD2C73 /* ChangeOrderStatusView.xib */,
+			);
+			path = OrderDetails;
+			sourceTree = "<group>";
+		};
+		570E456E29BF8E8700CD2C73 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				570E455129BF284900CD2C73 /* OrdersService.swift */,
+				570E456C29BF8E8100CD2C73 /* CustomersService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		578216C629BDD3FB00E28147 = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +165,20 @@
 		578216D129BDD3FB00E28147 /* Bouquets */ = {
 			isa = PBXGroup;
 			children = (
+				570E456E29BF8E8700CD2C73 /* Services */,
+				570E455329BF2D6900CD2C73 /* Orders */,
+				570E455429BF2D8C00CD2C73 /* OrderDetails */,
 				578216D229BDD3FB00E28147 /* AppDelegate.swift */,
 				578216D429BDD3FB00E28147 /* SceneDelegate.swift */,
-				578216D629BDD3FB00E28147 /* ViewController.swift */,
+				578216E029BDD3FD00E28147 /* LaunchScreen.storyboard */,
 				578216D829BDD3FB00E28147 /* Main.storyboard */,
 				578216DE29BDD3FD00E28147 /* Assets.xcassets */,
-				578216E029BDD3FD00E28147 /* LaunchScreen.storyboard */,
 				578216E329BDD3FD00E28147 /* Info.plist */,
 				578216DB29BDD3FB00E28147 /* Bouquets.xcdatamodeld */,
+				570E456A29BF860A00CD2C73 /* OrdersViewControllersFactory.swift */,
+				570E456F29BF8F4400CD2C73 /* DataStackManager.swift */,
+				5782170829BDE31100E28147 /* CustomerOrder.swift */,
+				570E457129BF912600CD2C73 /* Customer.swift */,
 			);
 			path = Bouquets;
 			sourceTree = "<group>";
@@ -146,6 +216,10 @@
 			dependencies = (
 			);
 			name = Bouquets;
+			packageProductDependencies = (
+				5782170629BDE25700E28147 /* Alamofire */,
+				57ED885829BE39BD009D1C96 /* CoreStore */,
+			);
 			productName = Bouquets;
 			productReference = 578216CF29BDD3FB00E28147 /* Bouquets.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +292,10 @@
 				Base,
 			);
 			mainGroup = 578216C629BDD3FB00E28147;
+			packageReferences = (
+				5782170529BDE25700E28147 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				57ED885729BE39BD009D1C96 /* XCRemoteSwiftPackageReference "CoreStore" */,
+			);
 			productRefGroup = 578216D029BDD3FB00E28147 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -237,6 +315,7 @@
 				578216E229BDD3FD00E28147 /* LaunchScreen.storyboard in Resources */,
 				578216DF29BDD3FD00E28147 /* Assets.xcassets in Resources */,
 				578216DA29BDD3FB00E28147 /* Main.storyboard in Resources */,
+				570E456729BF384C00CD2C73 /* ChangeOrderStatusView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +340,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578216D729BDD3FB00E28147 /* ViewController.swift in Sources */,
+				578216D729BDD3FB00E28147 /* OrdersViewController.swift in Sources */,
+				570E456529BF383C00CD2C73 /* ChangeOrderStatusView.swift in Sources */,
+				570E455A29BF2E2700CD2C73 /* OrderDetailsModel.swift in Sources */,
+				57D25BBB29BF06C6002607F4 /* OrdersViewModel.swift in Sources */,
+				570E456D29BF8E8100CD2C73 /* CustomersService.swift in Sources */,
+				570E456B29BF860A00CD2C73 /* OrdersViewControllersFactory.swift in Sources */,
+				57D25BBF29BF088C002607F4 /* OrderTableViewCell.swift in Sources */,
+				57D25BBD29BF070E002607F4 /* OrdersModel.swift in Sources */,
 				578216DD29BDD3FB00E28147 /* Bouquets.xcdatamodeld in Sources */,
+				570E455829BF2DF000CD2C73 /* OrderDetailsViewModel.swift in Sources */,
+				570E455229BF284900CD2C73 /* OrdersService.swift in Sources */,
+				570E457229BF912600CD2C73 /* Customer.swift in Sources */,
+				5782170929BDE31100E28147 /* CustomerOrder.swift in Sources */,
+				570E457029BF8F4400CD2C73 /* DataStackManager.swift in Sources */,
 				578216D329BDD3FB00E28147 /* AppDelegate.swift in Sources */,
+				570E455629BF2DAA00CD2C73 /* OrderDetailsViewController.swift in Sources */,
 				578216D529BDD3FB00E28147 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +541,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,6 +570,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -606,6 +700,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5782170529BDE25700E28147 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		57ED885729BE39BD009D1C96 /* XCRemoteSwiftPackageReference "CoreStore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnEstropia/CoreStore.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5782170629BDE25700E28147 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5782170529BDE25700E28147 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		57ED885829BE39BD009D1C96 /* CoreStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57ED885729BE39BD009D1C96 /* XCRemoteSwiftPackageReference "CoreStore" */;
+			productName = CoreStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		578216DB29BDD3FB00E28147 /* Bouquets.xcdatamodeld */ = {
