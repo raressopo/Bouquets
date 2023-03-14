@@ -11,9 +11,7 @@ import CoreStore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    let dataStack = DataStack(xcodeModelName: "Bouquets")
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
